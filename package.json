@@ -1,0 +1,31 @@
+{
+  "name": "@misaka-bot/koishi-plugin-gpt",
+  "description": "A simple ChatGPT plugin for your koishi bot",
+  "author": "witchelaina",
+  "version": "1.0.1",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "license": "MIT",
+  "scripts": {},
+  "keywords": [
+    "chatbot",
+    "koishi",
+    "plugin"
+  ],
+  "peerDependencies": {
+    "koishi": "^4.14.0"
+  },
+  "dependencies": {
+    "openai": "^3.3.0"
+  },
+  "koishi": {
+    "description": {
+      "en": "A simple ChatGPT plugin for your koishi bot",
+      "zh": "简单的ChatGPT对话插件"
+    }
+  }
+}
