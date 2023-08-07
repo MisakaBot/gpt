@@ -23,7 +23,7 @@ export function apply(ctx: Context, config: Config) {
     model: config.model,
   });
   ctx
-    .command('gpt.chat <content>', 'Send message to gpt.')
+    .command('gpt.chat <content:text>', 'Send message to gpt.')
     .alias('gc')
     .action(async ({ session }, content) => {
       const res = await gpt.newChat(content);
@@ -36,7 +36,7 @@ export function apply(ctx: Context, config: Config) {
     gpt.clearChat();
     return 'Cleared!';
   });
-  ctx.command('gpt.init <content>').action((_, content) => {
+  ctx.command('gpt.init <content:text>').action((_, content) => {
     gpt.initial = content;
     return 'Init success!';
   });
